@@ -5,7 +5,7 @@ function RedButton(props) {
         const my_div = document.getElementById("app-div");
         my_div.style.backgroundColor = "#FF0000";
     }
-    return <button onClick={onClick}>Red Background</button>
+    return <button data-testid={`red-btn`} onClick={onClick}>Red Background</button>
 }
 
 export default RedButton;
