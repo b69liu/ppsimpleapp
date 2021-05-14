@@ -15,4 +15,11 @@ describe('<App /> tests', () => {
         userEvent.click(screen.getByTestId('blue-btn'));
         expect(screen.getByTestId('app-div')).toHaveStyle(`background: #0000FF`)
     })
+
+    it('should change the background to red', () => {
+        render(<App />);
+        userEvent.click(screen.getByTestId('red-btn'));
+        expect(screen.getByTestId('app-div')).toHaveStyle('background: #FF0000')
+    }
+    )
 })
