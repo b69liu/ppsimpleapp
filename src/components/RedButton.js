@@ -2,7 +2,8 @@ import React from 'react';
 
 function RedButton(props) {
     const onClick = (e)=>{
-        document.body.style.backgroundColor = "#FF0000";
+        const my_div = document.getElementById("app-div");
+        my_div.style.backgroundColor = "#FF0000";
     }
     return <button onClick={onClick}>Red Background</button>
 }
